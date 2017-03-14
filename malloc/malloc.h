@@ -37,6 +37,9 @@ __BEGIN_DECLS
 /* Allocate SIZE bytes of memory.  */
 extern void *malloc (size_t __size) __THROW __attribute_malloc__ __wur;
 
+/* Allocate SIZE bytes of NVM memory */
+extern void *nvm_malloc (size_t __size) __THROW __attribute_malloc__ __wur;
+
 /* Allocate NMEMB elements of SIZE bytes each, all initialized to 0.  */
 extern void *calloc (size_t __nmemb, size_t __size)
 __THROW __attribute_malloc__ __wur;
